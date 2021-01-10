@@ -5,6 +5,8 @@
 </template>
 
 <style lang="scss">
+@import "~@/styles/normalize";
+@import "~@/styles/reset";
 #app {
   width: 100%;
   height: 100%;
