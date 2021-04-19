@@ -1,8 +1,8 @@
 // const env = PROJECT_ENV || 'dev'
-const env = 'production'
+const env = 'development'
 let config = require(`./${env}`).default
 
-console.log(config)
+// console.log(config)
 
 config = { ...config, env }
 

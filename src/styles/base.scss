@@ -1,0 +1,48 @@
+// 绝对定位
+@mixin posAbs($top: null, $right: null, $bottom:null, $left:null) {
+  position: absolute;
+  @if($top) {top: $top;}
+  @if($right) {right: $right;}
+  @if($bottom) {bottom: $bottom;}
+  @if($left) {left: $left;}
+}
+
+@mixin posAbsHorizontally {
+  @include posAbs($left: 50%);
+  transform: translateX(-50%);
+}
+
+@mixin posAbsVertical {
+  @include posAbs($top: 50%);
+  transform: translateY(-50%);
+}
+
+@mixin posAbsBothCenter {
+  @include posAbs($top: 50%, $left: 50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin bgImage($width, $height, $url, $repeat: no-repeat, $x: center, $y: center, $size: contain) {
+  width: $width;
+  height: $height;
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $x $y;
+  background-size: $size;
+}
+
+@mixin disFlex($direction: row, $justifyContent: center, $alignItems: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin bgGrey($alpha: .3) {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, $alpha);
+  top: 0;
+  left: 0;
+}

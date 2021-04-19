@@ -32,6 +32,6 @@ module.exports = {
         max: 2,
       },
     ],
-    'linebreak-style': ["off", "windows"]
+    'linebreak-style': ['off', 'windows'],
   },
 }
