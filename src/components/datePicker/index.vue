@@ -5,7 +5,6 @@
   >
     <div class="datePicker-box">
       <div class="datePicker-header">
-        <!--  @click="$emit('handleCancel')" -->
         <div
           class="datePicker-header-cancel"
           @click="$emit('update:show', false)"

@@ -21,7 +21,7 @@ function requestInterceptorHandler(config) {
 
 /**
  * @param {Object} response
- * @returns {Object || null}
+ * @return {Object || null}
  * response 的格式: {data, status, statusText, headers, config}
  */
 function responseInterceptorHandler(response) {
